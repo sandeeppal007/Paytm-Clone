@@ -24,7 +24,18 @@
             darkblue: '#0f4a8a',
             bodycolor: '#f5f7fa',
             white: "#ffffff"
-          }
+          },
+          screens: {
+      'sm': '768px',
+     
+
+      'md': '1024px',
+    
+
+      'lg': '1280px',
+   
+    },
+  
         }
       }
     }
@@ -34,21 +45,26 @@
 <body class="bg-gray-100">
 
   <!-- HEADER -->
-  <header class="text-gray-600 body-font px-9 ">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+  <header class="text-gray-600 body-font px-2 lg:px-20 lg:py-2">
+    <div class=" flex  p-2   justify-between items-center">
       <a class="flex  title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <img class="w-44" src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt="">
       </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
+      <nav class="flex  items-center text-base justify-center hidden lg:block">
         <a class="mr-5 text-base hover:text-gray-900 text-black font-bold">Paytm for consumer </a>
         <a class="mr-5 text-base hover:text-gray-900 text-black font-bold">Paytm for Business</a>
         <a class="mr-5 text-base hover:text-gray-900 text-black font-bold">Company</a>
         <a class="mr-5 text-base hover:text-gray-900 text-black font-bold">Investor Relation</a>
         <a class="mr-5 text-base hover:text-gray-900 text-black font-bold">Career</a>
       </nav>
-      <button
-        class="bg-primary  inline-flex items-center text-white  font-bold border-0 pl-2 gap-3 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0">
-        Log In <img class="w-10" src="https://assetscdn1.paytm.com/frontendcommonweb/efb01c36.svg" alt="">
+
+      
+      <ion-icon class="block text-3xl sm:hidden lg:hidden" name="menu-outline"></ion-icon>
+      <button class="flex justify-center items-center gap-2 lg:inline-flex hidden bg-primary rounded-full font-bold text-white pl-2">
+
+  
+       <h2>Sign In</h2>
+        <img class="w-10" src="https://assetscdn1.paytm.com/frontendcommonweb/efb01c36.svg" alt="">
 
       </button>
     </div>
@@ -66,16 +82,17 @@
 
 
   <!-- hero-section -->
+  
 
-  <section class="text-gray-600 body-font px-5 ">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+  <section class="text-gray-600 body-font lg:px-24">
+    <div class="container mx-auto flex px-2 py-20 md:flex-row flex-col items-center">
       <div
-        class="pl-10 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        class=" lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
         <h1 class=" font-bold my-5 text-6xl title-font  mb-4 font-medium text-gray-900">India's Most-loved Payments App
 
         </h1>
-        <p class="mb-8 w-1/2 leading-relaxed">Recharge & pay bills, book flights & movie tickets, open a savings
+        <p class="mb-8  leading-relaxed">Recharge & pay bills, book flights & movie tickets, open a savings
           account, invest in stocks & mutual funds, and do a lot more.</p>
         <div class="">
           <button
@@ -97,18 +114,18 @@
 
 
 
+<!-- recharge  -->
 
-
-  <section class="text-gray-600 body-font">
-    <div class="container flex flex-col px-20 py-10  bg-primary ">
+  <section class="text-gray-600 body-font ">
+    <div class="container flex flex-col lg:px-20 lg:py-10  bg-primary ">
       <div class="flex flex-col w-full mb-2">
-        <h1 class="text-gray-100 ml-6 sm:text-4xl font-bold text-3xl font-medium title-font mb-4 text-gray-900">Recharge & Pay Bills on Paytm.</h1>
+        <h1 class="mt-5 text-gray-100 ml-6 sm:text-4xl font-bold text-3xl font-medium title-font mb-4 text-gray-900">Recharge & Pay Bills on Paytm.</h1>
 
       
 
       </div>
-      <div class="flex   text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div class="flex flex-wrap lg:flex-nowrap justify-center  text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3 flex flex-col items-center  px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png"
               alt="">
@@ -119,7 +136,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class="  gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png"
               alt="">
@@ -130,7 +147,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class="  gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png"
               alt="">
@@ -140,7 +157,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png"
               alt="">
@@ -150,7 +167,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png"
               alt="">
@@ -160,7 +177,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png"
               alt="">
@@ -170,7 +187,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png"
               alt="">
@@ -189,15 +206,15 @@
 
 
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-20 py-10  bg-darkblue">
+  <section class="text-gray-600 body-font ">
+    <div class="container lg:px-20 lg:py-10  bg-darkblue">
       <div class="flex flex-col w-full mb-20">
-        <h1 class="text-gray-100 ml-6 sm:text-4xl font-bold text-3xl font-medium title-font  text-gray-900">
+        <h1 class="mt-5 text-gray-100 ml-6 sm:text-4xl font-bold text-3xl font-medium title-font  text-gray-900">
           Book
               & Buy on Paytm.</h1>
       </div>
-      <div class="flex  -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div class="flex   text-center flex flex-wrap lg:flex-nowrap justify-center  text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3 flex flex-col items-center  px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png"
               alt="">
@@ -208,7 +225,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class="  gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png"
               alt="">
@@ -219,7 +236,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class="  gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png"
               alt="">
@@ -229,7 +246,7 @@
 
           </div>
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-4 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3 flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png"
               alt="">
@@ -239,7 +256,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png"
               alt="">
@@ -249,7 +266,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png"
               alt="">
@@ -259,7 +276,7 @@
 
           </div>
         </div>
-        <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
+        <div class="p-2 md:w-1/4 sm:w-1/2 lg:w-full">
           <div class=" gap-3  flex flex-col items-center px-4 py-6 rounded-lg">
             <img class="w-16" src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png"
               alt="">
@@ -283,12 +300,12 @@
   <section class="flex justify-center items-center flex-col mt-28">
 
     <div>
-      <h2 class="ml-32 font-bold text-5xl">Paytm Payment Instruments</h2>
-      <section class="text-gray-600 body-font   bg-white  mx-32 mt-12  rounded-lg w-4/5">
-        <div class="container mx-auto flex pl-28 pr-12 py-20 md:flex-row flex-col items-center ">
+      <h2 class=" p-5 lg:ml-32 font-bold text-5xl">Paytm Payment Instruments</h2>
+      <section class="text-gray-600 body-font mx-auto mt-10 py-10 bg-white  lg:mx-32 lg:mt-12  rounded-lg lg:w-4/5">
+        <div class="container mx-auto flex lg:pl-28 lg:pr-12 lg:py-20 md:flex-row flex-col items-center p-5">
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <div class="flex justify-center items-center gap-3">
+            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+            <div class="flex lg:justify-center items-center gap-3">
               <img class="w-20 inline-block"
                 src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="">
 
@@ -296,7 +313,7 @@
               <h2 class="font-bold text-gray-900">Paytm <br>Wallet</h2>
             </div>
 
-            <h1 class=" font-bold  text-4xl w-4/5 title-font   font-medium text-gray-900">The Fastest Way to Pay
+            <h1 class=" font-bold  text-4xl lg:w-4/5 title-font   font-medium text-gray-900">The Fastest Way to Pay
               In-store & Online.
 
             </h1>
@@ -332,11 +349,11 @@
 
     <div>
 
-      <section class="text-gray-600 body-font   bg-white  mx-32 mt-12  rounded-lg w-4/5">
-        <div class="container mx-auto flex pl-28 pr-12 py-20 md:flex-row flex-col items-center ">
+      <section class="text-gray-600 body-font mx-auto py-10  bg-white  lg:mx-32 mt-12  rounded-lg lg:w-4/5">
+        <div class="container mx-auto flex lg:pl-28 lg:pr-12 lg:py-20 md:flex-row flex-col items-center ">
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <div class="flex justify-center items-center gap-3">
+            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 p-5">
+            <div class="flex lg:justify-center items-center gap-3">
               <img class="w-20 inline-block"
                 src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="">
 
@@ -344,7 +361,7 @@
               <h2 class="font-bold text-gray-900">UPI Money<br>Transfer</h2>
             </div>
 
-            <h1 class=" font-bold  text-4xl w-4/5 title-font   font-medium text-gray-900">Pay anyone directly from your
+            <h1 class=" font-bold  text-4xl lg:w-4/5 title-font   font-medium text-gray-900">Pay anyone directly from your
               bank account.
 
             </h1>
@@ -380,10 +397,10 @@
 
     <div>
 
-      <section class="text-gray-600 body-font   bg-white  mx-32 mt-12  rounded-lg w-4/5">
-        <div class="container mx-auto flex pl-28 pr-12 py-20 md:flex-row flex-col items-center ">
+      <section class="text-gray-600 body-font mx-auto py-10  bg-white  lg:mx-32 mt-12  rounded-lg lg:w-4/5">
+        <div class="container mx-auto flex lg:pl-28 lg:pr-12 lg:py-20 md:flex-row flex-col items-center ">
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 p-5">
 
             <img class="w-1/4 inline-block"
               src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="">
@@ -419,9 +436,9 @@
 
   </section>
 
-  <section class="flex gap-10 mt-28 mx-28 rounded-lg justify-center ">
+  <section class="flex gap-10 mt-28 px-10 mx-auto lg:mx-28 rounded-lg justify-center flex-col lg:flex-row">
 
-    <div class="bg-white  rounded-lg space-y-5  flex flex-col w-5/12 px-16 pt-20 ">
+    <div class="bg-white  rounded-lg space-y-5  flex flex-col lg:w-5/12 p-10 lg:px-16 lg:pt-20 w-full">
 
 
       <img class="w-1/2" src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="">
@@ -433,7 +450,7 @@
       <img class="w-9/12" src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
 
     </div>
-    <div class="bg-white  rounded-lg space-y-5  flex flex-col w-5/12 px-16 pt-20 ">
+    <div class="bg-white  rounded-lg space-y-5  flex flex-col p-10 lg:w-5/12 lg:px-16 pt-20 ">
 
 
       <img class="w-1/2" src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="">
@@ -469,16 +486,16 @@ Financial Services by Paytm
 
 
 
-  <section class="flex justify-center items-center bg-white w-full flex-col mt-10 w-full">
+  <section class="flex justify-center items-center bg-white  flex-col mt-10 w-full">
 
     <div>
 
-      <section class="text-gray-600 body-font   bg-white  mx-auto   rounded-lg  w-5/6">
-        <h2 class="text-5xl font-bold text-gray-800 ml-24 pt-5">Financial Services by Paytm</h2>
+      <section class="text-gray-600 body-font   bg-white  mx-auto   rounded-lg  lg:w-5/6">
+        <h2 class="text-5xl font-bold text-gray-800 ml-14 lg:ml-36 pt-5">Financial Services by Paytm</h2>
 
-        <div class="container mx-auto flex pl-28 pr-12 md:flex-row flex-col items-center ">
+        <div class="container py-10 mx-auto flex  lg:pl-28 lg:pr-12 md:flex-row flex-col items-center ">
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            class="space-y-10 lg:flex-grow pl-20 pt-5 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
             <img class="w-1/4 inline-block"
               src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="">
 
@@ -501,8 +518,8 @@ Financial Services by Paytm
 
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class=" w-3/5object-cover object-center rounded" alt="hero"
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+            <img class="  rounded" alt="hero"
               src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png">
           </div>
         </div>
@@ -518,28 +535,28 @@ Financial Services by Paytm
 
   <!-- ////////////////////////
 
-build lon term
+build long term
   
  ////////////////////////////-->
 
 
 
-  <section class="flex justify-center  items-center flex-col mt-10  bg-bodycolor">
+  <section class="flex lg:justify-center  lg:items-center flex-col lg:mt-10  bg-bodycolor">
 
-    <div class="bg-lightgrey">
+    <div class="bg-lightgrey ">
       <div class="absolute ">
-        <img class="w-full mt-5" src="https://assetscdn1.paytm.com/frontendcommonweb/69678bc5.png" alt="">
+        <img class=" lg:w-full mt-5" src="https://assetscdn1.paytm.com/frontendcommonweb/69678bc5.png" alt="">
 
       </div>
-      <section class="text-gray-600 body-font   bd-lightgrey  mt-12  rounded-lg w-full relative">
+      <section class="text-gray-600 body-font   bd-lightgrey  lg:mt-12  rounded-lg w-full relative">
 
-        <div class="container mx-auto flex  pl-28 pr-12 py-20 md:flex-row flex-col items-center ">
+        <div class="container mx-auto flex p-10 lg:pl-28 lg:pr-12 py-20 md:flex-row flex-col items-center ">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class=" w-3/5object-cover object-center rounded" alt="hero"
+            <img class=" w-full  rounded" alt="hero"
               src="https://assetscdn1.paytm.com/images/catalog/view_item/788781/1626077377376.png">
           </div>
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-32">
+            class="space-y-10 lg:flex-grow pt-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0  lg:ml-32">
 
             <img class="w-1/4 inline-block"
               src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="">
@@ -548,11 +565,11 @@ build lon term
 
 
 
-            <h1 class=" font-bold  text-4xl w-3/5 title-font   font-medium text-gray-900">
+            <h1 class=" font-bold  text-4xl lg:w-3/5 title-font   font-medium text-gray-900">
               Build Long-term Wealth & Achieve your Goals.
 
             </h1>
-            <p class="mb-8 font-semibold text-gray-800 text-xl w-5/6 leading-relaxed">
+            <p class="mb-8 font-semibold text-gray-800 text-xl lg:w-5/6 leading-relaxed">
               Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can
               help you create wealth & realise your dreams.</p>
             <div class="">
@@ -583,14 +600,14 @@ build lon term
 
  ////////////////////////////-->
 
-  <section class="flex justify-center items-center flex-col mt-10 py-32  w-full bg-white">
+  <section class="flex justify-center items-center flex-col lg:mt-10 lg:py-32 p-10  w-full bg-white">
 
     <div>
 
-      <section class="text-gray-600 body-font   bg-white mx-auto mt-12  rounded-lg w-5/6">
-        <div class="container mx-auto flex pl-28 pr-12  md:flex-row flex-col items-center ">
+      <section class="text-gray-600 body-font   bg-white mx-auto lg:mt-12  rounded-lg lg:w-5/6">
+        <div class="container mx-auto flex lg:pl-28 lg:pr-12  md:flex-row flex-col items-center ">
           <div
-            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
 
             <img class="w-2/6 inline-block"
               src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="">
@@ -617,7 +634,7 @@ build lon term
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class=" w-3/5object-cover object-center rounded" alt="hero"
+            <img class="  rounded" alt="hero"
               src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png">
           </div>
         </div>
@@ -636,18 +653,18 @@ build lon term
                       /////////////////-->
 
 
-  <section class="mt-10   w-full bg-white">
+  <section class="mt-10   w-full bg-white py-5">
 
 
 
-    <section class="text-gray-600 body-font   bg-bodycolor mx-auto   rounded-lg w-5/6">
-      <div class="container  flex justify-between mx-auto ml-24  gap-48  flex-row  items-center ">
+    <section class="text-gray-600 body-font px-5 py-20 bg-bodycolor   rounded-lg lg:w-5/6">
+      <div class="container  flex justify-between mx-auto lg:ml-24  lg:gap-48  lg:flex-row flex-col-reverse items-center ">
         <div class=" w-5/6">
           <img class="w-5/6  rounded" alt="hero"
             src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png">
         </div>
         <div
-          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
 
           <img class="w-2/6 " src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="">
 
@@ -690,14 +707,14 @@ build lon term
            /////////////////-->
 
 
-  <section class="flex justify-center items-center flex-col mt-10 py-32  w-full bg-white">
+  <section class=" flex justify-center  flex-col mt-10 lg:py-32 py-20 w-full bg-white">
 
 
-    <h2 class="text-5xl ml-32 font-bold">Business Services by Paytm</h2>
-    <section class="text-gray-600 body-font   bg-bodycolor mx-auto mt-12  rounded-lg w-5/6 py-20">
-      <div class="container mx-auto flex pl-28  md:flex-row flex-col items-center ">
+    <h2 class="text-5xl lg:ml-24 p-5 font-bold">Business Services by Paytm</h2>
+    <section class="text-gray-600 body-font   bg-bodycolor mx-auto mt-12  rounded-lg lg:w-5/6 lg:py-20 py-10">
+      <div class="container mx-auto flex lg:pl-28  md:flex-row flex-col items-center ">
         <div
-          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 p-5">
 
 
 
@@ -732,17 +749,17 @@ build lon term
 
     <!-- shop by payments -->
 
-    <section class="text-gray-600 body-font   bg-bodycolor mx-auto mt-12  rounded-lg w-5/6 py-14">
-      <div class="container mx-auto flex pl-28  md:flex-row flex-col items-center ">
+    <section class="text-gray-600 body-font   bg-bodycolor mx-auto mt-12  rounded-lg lg:w-5/6 py-14">
+      <div class="container mx-auto flex lg:pl-28 md:flex-row flex-col items-center ">
         <div
-          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          class="space-y-10 lg:flex-grow  flex flex-col md:items-start md:text-left mb-16 md:mb-0 pl-5">
 
 
 
 
 
 
-          <h1 class=" font-bold  text-4xl w-3/5 title-font   font-medium text-gray-900">
+          <h1 class=" font-bold  text-4xl lg:w-3/5 title-font   font-medium text-gray-900">
             In-shop payments powered by Paytm.
           </h1>
           <p class="mb-8 w-8/12 leading-relaxed font-semibold">
@@ -780,18 +797,18 @@ build lon term
               
               ////////////////////-->
 
-  <section class="mx-auto p-28 bg-white ">
+  <section class="lg:mx-auto lg:p-28 bg-white ">
     <div class="">
 
-      <h2 class="ml-40 text-5xl w-1/3 font-bold">
+      <h2 class="lg:ml-20 p-10 text-5xl lg:w-1/3 font-bold">
         Business Tools to help your business grow
       </h2>
 
 
-      <div class="flex justify-center items-center py-10 gap-5">
+      <div class="flex justify-center items-center py-10 gap-5 lg:flex-row flex-col">
 
 
-        <div class="w-1/5 flex flex-col gap-7">
+        <div class="lg:w-1/5 flex flex-col gap-7 p-5 lg:p-0 w-3/4">
 
 
           <div>
@@ -809,7 +826,7 @@ build lon term
         </div>
 
 
-        <div class="w-1/5 w-1/5 flex flex-col gap-7">
+        <div class="lg:w-1/5 flex flex-col gap-7 p-5 lg:p-0 w-3/4">
 
 
           <div>
@@ -827,7 +844,7 @@ build lon term
 
 
 
-        <div class="w-1/5 w-1/5 flex flex-col gap-7">
+        <div class="lg:w-1/5 flex flex-col gap-7 p-5 lg:p-0 w-3/4">
 
 
           <div>
@@ -844,7 +861,7 @@ build lon term
         </div>
 
 
-        <div class="w-1/5 w-1/5 flex flex-col gap-7">
+        <div class="lg:w-1/5 flex flex-col gap-7 p-5 lg:p-0 w-3/4">
 
 
           <div>
@@ -880,13 +897,13 @@ build lon term
 
   <!-- Paytm-money-travel -->
 
-  <section class="p-40 mx-auto">
+  <section class="lg:p-40 mx-auto ">
 
 
     <div class="flex flex-col gap-5">
       <!-- Paytm Money -->
 
-      <div class="flex flex-row gap-5 bg-white py-20 pl-20 rounded-lg">
+      <div class="flex lg:flex-row flex-col gap-5 bg-white lg:py-20 lg:pl-20 rounded-lg p-10">
 
         <div class="space-y-3 flex flex-col gap-2" >
           <img class="w-3/4" src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
@@ -895,37 +912,37 @@ build lon term
         </div>
 
         <!-- cards -->
-        <div class="flex flex-row gap-5">
+        <div class="flex flex-row lg:flex-nowrap flex-wrap gap-5 mx-auto">
 
-          <div class="space-y-5 p-2 bg-primary rounded-lg">
+          <div class="space-y-5 p-2 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img  src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="">
             <h2 class="text-center text-white font-semibold text-lg">Invest <br> Stocks
              </h2>
 
           </div>
 
-          <div class="space-y-5 p-2 bg-primary rounded-lg">
+          <div class="space-y-5 p-2 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="">
             <h2 class="text-center text-white font-semibold text-lg"> Apply for IPO
              </h2>
 
           </div>
 
-          <div class="space-y-5 p-2 bg-primary rounded-lg">
+          <div class="space-y-5 p-2 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="">
             <h2 class="text-center text-white font-semibold text-lg">Invest in <br> ETFs
              </h2>
 
           </div>
 
-          <div class="space-y-5 p-2 bg-primary rounded-lg">
+          <div class="space-y-5 p-2 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="">
             <h2 class="text-center text-white font-semibold text-lg">Buy Gold
              </h2>
 
           </div>
 
-          <div class="space-y-5 p-2 bg-primary rounded-lg">
+          <div class="space-y-5 p-2 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="">
             <h2 class="text-center text-white font-semibold text-lg">Invest In Mutal Funds
              </h2>
@@ -940,7 +957,7 @@ build lon term
 
       <!-- Paytm travel  -->
 
-      <div class="flex flex-row gap-5 bg-white py-20 pl-20 rounded-lg">
+      <div class="flex lg:flex-row flex-col gap-5 bg-white py-20 lg:pl-20 p-5 rounded-lg ">
 
         <div class="space-y-3 flex flex-col gap-2" >
           <img class="w-3/4" src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="">
@@ -949,9 +966,9 @@ build lon term
         </div>
 
         <!-- cards -->
-         <div class="flex flex-row gap-5">
+         <div class="flex flex-row flex-wrap lg:flex-nowrap gap-5">
 
-          <div class="space-y-5 py-7 pl-3 pr-7 bg-primary rounded-lg">
+          <div class="lg:space-y-5 lg:py-5 p-5 lg:pl-3 lg:pr-7 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png" alt="">
             <div class="text-white font-semibold">
               Flat 14%
@@ -961,7 +978,7 @@ build lon term
 
           </div>
 
-          <div class="space-y-5 py-3 pl-3 pr-7 bg-primary rounded-lg">
+          <div class="lg:space-y-5 lg:py-5 p-5 lg:pl-3 lg:pr-7 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png" alt="">
           <div class="text-white font-semibold">
             100% Refund
@@ -970,7 +987,7 @@ build lon term
 
           </div>
 
-          <div class="space-y-5 py-3 pl-3 pr-7 bg-primary rounded-lg">
+          <div class="lg:space-y-5 lg:py-5 p-5 lg:pl-3 lg:pr-7 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full"">
             <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png" alt="">
            <div class="text-white font-semibold">
             Flat 10% Cashback
@@ -979,14 +996,14 @@ build lon term
 
           </div>
 
-          <div class="space-y-5 py-3 pl-3 pr-7 bg-primary rounded-lg">
+          <div class="lg:space-y-5 lg:py-5 p-5 lg:pl-3 lg:pr-7 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png" alt="">
             <div class="text-white font-semibold">
               Sanitised Bus Options With TravelSafe+
              </div>
           </div>
 
-          <div class="space-y-5 py-3 pl-3 pr-7 bg-primary rounded-lg">
+          <div class="lg:space-y-5 lg:py-5 p-5 lg:pl-3 lg:pr-7 bg-primary rounded-lg w-28 h-48 lg:w-full lg:h-full">
             <img class="w-20" src="https://assetscdn1.paytm.com/images/catalog/view_item/864152/1627566492097.png" alt="">
           <div class="text-white font-semibold">
             Hassle Free Train Ticket Bookings
@@ -1011,13 +1028,13 @@ build lon term
 
   </section>
 
-<section class="flex justify-between  px-28 py-10">
-  <div class="flex flex-row gap-10">
+<section class="flex p-5 justify-between items-center lg:flex-row  lg:px-28 lg:py-10 ">
+  <div class="flex lg:flex-row flex-col gap-4 lg:gap-10">
     <h2 class="font-bold text-xl">Downldoad Paytm App <br> to pay from anywhere</h2>
-    <img src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg" alt="">
-    <img src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg" alt="">
+    <img class="w-1/2" src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg" alt="">
+    <img class="w-1/2"src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg" alt="">
   </div>
-  <div class="flex flex-row gap-5">
+  <div class="flex flex-row gap-5 mt-5 items-start">
     <img class="w-10" src="https://assetscdn1.paytm.com/frontendcommonweb/508b83d1.svg" alt="">
     <img class="w-10" src="https://assetscdn1.paytm.com/frontendcommonweb/f9c15a7a.svg" alt="">
     <img class="w-5" src="https://assetscdn1.paytm.com/frontendcommonweb/ad9d15ee.svg" alt="">
@@ -1028,6 +1045,7 @@ build lon term
 <div class="bg-primary h-5 w-full"></div>
 <div class="bg-darkblue h-5 w-full"></div>
   
+</div>
 
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
